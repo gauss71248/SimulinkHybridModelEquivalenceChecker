@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<subclass name="StateflowChart" extends="StateflowItem"
+		discriminator-value="chart">
+
+		<set table="junctions" name="junctions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATEFLOWCHART_ID" />
+			<many-to-many column="JUNCTION_ID" class="Junction"
+				not-found="ignore" />
+		</set>
+
+		<set table="states" name="states" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATEFLOWCHART_ID" />
+			<many-to-many column="STATE_ID" class="State" not-found="ignore" />
+		</set>
+
+		<set table="transitions" name="transitions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATEFLOWCHART_ID" />
+			<many-to-many column="TRANSITION_ID" class="Transition"
+				not-found="ignore" />
+		</set>
+
+		<set table="events" name="events" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATEFLOWCHART_ID" />
+			<many-to-many column="EVENT_ID" class="Event" not-found="ignore" />
+		</set>
+		
+		<set table="datas" name="data" cascade="all-delete-orphan" lazy="false">
+			<key column="STATEFLOWCHART_ID" />
+			<many-to-many column="DATA_ID" class="Data" not-found="ignore" />
+		</set>
+		
+		<set table="localData" name="localData" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="DATA_ID" class="Data" not-found="ignore" />
+		</set>
+		
+		<set table="localEvents" name="localEvents" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="EVENT_ID" class="Event" not-found="ignore" />
+		</set>
+		
+		<set table="chart_to_chartBlocks" name="chartBlocks" lazy="false" cascade="all-delete-orphan">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="Block_ID" class="ChartBlock" not-found="ignore" />
+		</set>
+		
+		<join table="stateflowchart">
+			<key column="SL_ITEM_ID" />
+			<property name="name" column="name" />
+		</join>
+
+	</subclass>
+
+</hibernate-mapping>

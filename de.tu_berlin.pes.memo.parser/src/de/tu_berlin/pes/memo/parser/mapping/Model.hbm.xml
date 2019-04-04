@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<subclass name="Model" extends="SimulinkItem"
+		discriminator-value="model">
+
+		<set table="blocks" name="blocks" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="MODEL_ID" />
+			<many-to-many column="SL_ITEM_ID" class="Block"
+				not-found="ignore" />
+		</set>
+		<set table="signals" name="signalLines" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="MODEL_ID" />
+			<many-to-many column="SL_ITEM_ID" class="SignalLine"
+				not-found="ignore" />
+		</set>
+		<set name="configurations" table="configurations" lazy="false"
+			cascade="all-delete-orphan">
+			<key column="MODEL_ID" />
+			<many-to-many column="SL_ITEM_ID" class="Configuration"
+				not-found="ignore" />
+		</set>
+		
+		<set name="stateMachines" table="stateMachines" lazy="false"
+			cascade="all-delete-orphan">
+			<key column="MODEL_ID" />
+			<many-to-many column="SL_ITEM_ID" class="StateMachine"
+				not-found="ignore" />
+		</set>
+		
+		<set name="workspaceVariables" table="WS_VARS" lazy="false"
+			cascade="all-delete-orphan">
+			<key column="MODEL_ID" />
+			<many-to-many column="SL_ITEM_ID" class="WSVariable"
+				not-found="ignore" />
+		</set>
+
+		<join table="MODEL">
+			<key column="SL_ITEM_ID" />
+			<property name="name" column="MODEL_NAME" />
+			<property name="reference" column="is_reference" type="yes_no" />
+		</join>
+		
+
+		<!--
+			<map name="configuration" table="configuration" lazy="false"
+			cascade="all-delete-orphan"> <key column="id" /> <map-key
+			column="c_key" type="string" /> <element column="c_value"
+			type="string" /> </map>
+		-->
+
+	</subclass>
+
+</hibernate-mapping>

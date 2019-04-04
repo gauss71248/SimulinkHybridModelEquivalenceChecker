@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="parser" size="1625,886" id="" metadata="uml2-1.0" initialized="true" scrolledX="-5" tag="1000" key="32303037303533312D313030302064652E74755F6265726C696E2E7065732E6D656D6F2E7061727365722F726569636865726474">
+  <children xsi:type="editmodel:PackageEditModel" name="de.tu_berlin.pes.memo.parser" location="0,15" size="1561,871" id="de.tu_berlin.pes.memo.parser">
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.3/@sourceConnections.1" name="BlockFactory" location="1180,37" size="180,139" id="de.tu_berlin.pes.memo.parser/BlockFactory" runTimeClassModel="addDefaults(Ljava.lang.String;Ledu.tum.cs.simulink.builder.MDLSection;Lde.tu_berlin.pes.memo.model.impl.Model;),getInstance(),clear(),createBlock(ILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;Lde.tu_berlin.pes.memo.model.impl.Model;),replaceBlockByChartBlock(Lde.tu_berlin.pes.memo.model.impl.StateflowChart;Lde.tu_berlin.pes.memo.model.impl.Model;),createBlock(ILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;Lde.tu_berlin.pes.memo.model.impl.Model;Ljava.lang.String;)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="157,90">
+        <children xsi:type="editmodel:MethodEditModel" name="addDefaults" id="de.tu_berlin.pes.memo.parser/BlockFactory#addDefaults(Ljava.lang.String;Ledu.tum.cs.simulink.builder.MDLSection;Lde.tu_berlin.pes.memo.model.impl.Model;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="clear" id="de.tu_berlin.pes.memo.parser/BlockFactory#clear()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="createBlock" id="de.tu_berlin.pes.memo.parser/BlockFactory#createBlock(ILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;Lde.tu_berlin.pes.memo.model.impl.Model;Ljava.lang.String;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="createBlock" id="de.tu_berlin.pes.memo.parser/BlockFactory#createBlock(ILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;Lde.tu_berlin.pes.memo.model.impl.Model;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="replaceBlockByChartBlock" id="de.tu_berlin.pes.memo.parser/BlockFactory#replaceBlockByChartBlock(Lde.tu_berlin.pes.memo.model.impl.StateflowChart;Lde.tu_berlin.pes.memo.model.impl.Model;)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.3/@sourceConnections.2 //@children.0/@children.4/@children.0/@sourceConnections.2" name="MeMoParserManager" location="394,210" size="177,103" id="de.tu_berlin.pes.memo.parser/MeMoParserManager" runTimeClassModel="setmFiles(Ljava.util.List;),loadModelSectionFromFile(Ljava.lang.String;),setLibFiles(Ljava.util.List;),getOpenedFile(),setLibFileMap(Ljava.util.HashMap;),getLibFileMap(),getmFiles(),getLibraryAST(Ljava.lang.String;)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="154,54">
+        <children xsi:type="editmodel:MethodEditModel" name="getLibraryAST" id="de.tu_berlin.pes.memo.parser/MeMoParserManager#getLibraryAST(Ljava.lang.String;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="loadModelSectionFromFile" id="de.tu_berlin.pes.memo.parser/MeMoParserManager#loadModelSectionFromFile(Ljava.lang.String;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="setLibFiles" id="de.tu_berlin.pes.memo.parser/MeMoParserManager#setLibFiles(Ljava.util.List;)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser/MeMoParserManager-Standard::Call->de.tu_berlin.pes.memo.parser/MeMoParserPlugin" source="//@children.0/@children.1" target="//@children.0/@children.2" targetEnd="//@children.0/@children.1/@sourceConnections.0/@children.2" label="//@children.0/@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="93,103" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="80,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.1/@sourceConnections.0 //@children.0/@children.4/@children.1/@sourceConnections.0 //@children.0/@children.5/@children.0/@sourceConnections.0" name="MeMoParserPlugin" location="407,350" size="162,157" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin" runTimeClassModel="getDefault(),MeMoParserPlugin(),pLUGIN_ID,stop(Lorg.osgi.framework.BundleContext;),jmbridgePath,start(Lorg.osgi.framework.BundleContext;)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="114,36">
+        <children xsi:type="editmodel:AttributeEditModel" name="jmbridgePath" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin#jmbridgePath"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="pLUGIN_ID" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin#pLUGIN_ID"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="118,72">
+        <children xsi:type="editmodel:MethodEditModel" name="MeMoParserPlugin" location="400,378" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin#MeMoParserPlugin()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="getDefault" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin#getDefault()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="start" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin#start(Lorg.osgi.framework.BundleContext;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="stop" id="de.tu_berlin.pes.memo.parser/MeMoParserPlugin#stop(Lorg.osgi.framework.BundleContext;)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.5/@children.0/@sourceConnections.1" name="ModelBuilder" location="57,36" size="127,103" id="de.tu_berlin.pes.memo.parser/ModelBuilder" runTimeClassModel="getParentID(Ljava.lang.String;),buildModel(Ledu.tum.cs.simulink.builder.MDLSection;IZ),reassignGotos(Lorg.hibernate.Session;Lde.tu_berlin.pes.memo.model.impl.Model;)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="101,54">
+        <children xsi:type="editmodel:MethodEditModel" name="buildModel" id="de.tu_berlin.pes.memo.parser/ModelBuilder#buildModel(Ledu.tum.cs.simulink.builder.MDLSection;IZ)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="getParentID" id="de.tu_berlin.pes.memo.parser/ModelBuilder#getParentID(Ljava.lang.String;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="reassignGotos" id="de.tu_berlin.pes.memo.parser/ModelBuilder#reassignGotos(Lorg.hibernate.Session;Lde.tu_berlin.pes.memo.model.impl.Model;)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser/ModelBuilder-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager" source="//@children.0/@children.3" target="//@children.0/@children.4/@children.0" targetEnd="//@children.0/@children.3/@sourceConnections.0/@children.2" label="//@children.0/@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="127,66" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,30"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser/ModelBuilder-Standard::Call->de.tu_berlin.pes.memo.parser/BlockFactory" source="//@children.0/@children.3" target="//@children.0/@children.0" targetEnd="//@children.0/@children.3/@sourceConnections.1/@children.2" label="//@children.0/@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="127,51" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,50"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser/ModelBuilder-Standard::Call->de.tu_berlin.pes.memo.parser/MeMoParserManager" source="//@children.0/@children.3" target="//@children.0/@children.1" targetEnd="//@children.0/@children.3/@sourceConnections.2/@children.2" label="//@children.0/@children.3/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@children.3/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="127,82" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,9"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.0/@children.4/@children.0/@sourceConnections.0" name="de.tu_berlin.pes.memo.parser.matlab" location="656,179" size="884,547" id="de.tu_berlin.pes.memo.parser.matlab">
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.3/@sourceConnections.0" name="MeMoMatlabManager" location="44,14" size="179,103" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager" runTimeClassModel="matlabPortEvaluation(Lde.tu_berlin.pes.memo.model.impl.Model;),loadLibs(Ljava.util.Collection;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;),loadMFiles(Ljava.util.List;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;)">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="129,54">
+          <children xsi:type="editmodel:MethodEditModel" name="loadLibs" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager#loadLibs(Ljava.util.Collection;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="loadMFiles" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager#loadMFiles(Ljava.util.List;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="matlabPortEvaluation" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager#matlabPortEvaluation(Lde.tu_berlin.pes.memo.model.impl.Model;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Soyatec::Import->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector*de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Standard::Instantiate->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector*de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector" source="//@children.0/@children.4/@children.0" target="//@children.0/@children.4/@children.1" targetEnd="//@children.0/@children.4/@children.0/@sourceConnections.0/@children.2" label="//@children.0/@children.4/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.4/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate, Call»" size="119,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="160,101" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,78"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation*de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Standard::Instantiate->de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation*de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Soyatec::Import->de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation" source="//@children.0/@children.4/@children.0" target="//@children.0/@children.4/@children.4" targetEnd="//@children.0/@children.4/@children.0/@sourceConnections.1/@children.2" label="//@children.0/@children.4/@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.4/@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate, Call»" size="119,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="114,103" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="61,0"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Standard::Call->de.tu_berlin.pes.memo.parser/MeMoParserManager" source="//@children.0/@children.4/@children.0" target="//@children.0/@children.1" targetEnd="//@children.0/@children.4/@children.0/@sourceConnections.2/@children.2" label="//@children.0/@children.4/@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@children.4/@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,59" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="177,42"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" id="de.tu_berlin.pes.memo.parser.matlab/MeMoMatlabManager-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand" source="//@children.0/@children.4/@children.0" target="//@children.0/@children.4/@children.3" targetEnd="//@children.0/@children.4/@children.0/@sourceConnections.3/@children.2" label="//@children.0/@children.4/@children.0/@sourceConnections.3/@children.0" sourceEnd="//@children.0/@children.4/@children.0/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="179,24" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,11"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.4/@children.4/@sourceConnections.0 //@children.0/@children.4/@children.3/@sourceConnections.1 //@children.0/@children.4/@children.0/@sourceConnections.0" name="MatlabConnector" location="312,62" size="216,301" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector" runTimeClassModel="returningEval(Ljava.lang.String;I),eval(Ljava.lang.String;),getVariable(Ljava.lang.String;),close(),MatlabConnector(),getIsConnected(),startMatlabInstance(Z),releaseConnection(Z),getSLAPI(),debug(Z),addMatlabInterfacePacketListener(Lcom.modelengineers.jmbridge.lg.MatlabConnectionPacketListener;),refreshProperties(),establishMatlabConnection(I),getMatlabAPI()">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="193,252">
+          <children xsi:type="editmodel:MethodEditModel" name="MatlabConnector" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#MatlabConnector()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="addMatlabInterfacePacketListener" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#addMatlabInterfacePacketListener(Lcom.modelengineers.jmbridge.lg.MatlabConnectionPacketListener;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="close" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#close()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="debug" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#debug(Z)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="establishMatlabConnection" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#establishMatlabConnection(I)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="eval" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#eval(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getIsConnected" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#getIsConnected()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getMatlabAPI" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#getMatlabAPI()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getSLAPI" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#getSLAPI()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getVariable" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#getVariable(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="refreshProperties" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#refreshProperties()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="releaseConnection" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#releaseConnection(Z)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="returningEval" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#returningEval(Ljava.lang.String;I)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="startMatlabInstance" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector#startMatlabInstance(Z)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/MatlabConnector-Standard::Call->de.tu_berlin.pes.memo.parser/MeMoParserPlugin" source="//@children.0/@children.4/@children.1" target="//@children.0/@children.2" targetEnd="//@children.0/@children.4/@children.1/@sourceConnections.0/@children.2" label="//@children.0/@children.4/@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.4/@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,187" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="162,78"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.4/@children.4/@sourceConnections.1" name="ReturnFormatter" location="34,435" size="146,85" id="de.tu_berlin.pes.memo.parser.matlab/ReturnFormatter" runTimeClassModel="formatResult(Ljava.lang.Object;),formatException(Ljava.lang.Exception;)">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="108,36">
+          <children xsi:type="editmodel:MethodEditModel" name="formatException" id="de.tu_berlin.pes.memo.parser.matlab/ReturnFormatter#formatException(Ljava.lang.Exception;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="formatResult" id="de.tu_berlin.pes.memo.parser.matlab/ReturnFormatter#formatResult(Ljava.lang.Object;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.4/@children.4/@sourceConnections.2 //@children.0/@children.4/@children.0/@sourceConnections.3" name="RunMatlabCommand" location="671,40" size="175,330" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand" runTimeClassModel="startTime,de.tu_berlin.pes.memo.parser.matlab.RunMatlabCommand.Command,waitForResult(I),runGetVarCommand(Ljava.lang.String;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;II),result,setCommand(Lde.tu_berlin.pes.memo.parser.matlab.RunMatlabCommand.Command;Ljava.lang.String;),run(),executeCommand(Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;Lde.tu_berlin.pes.memo.parser.matlab.RunMatlabCommand.Command;Ljava.lang.String;I),runEvalCommand(Ljava.lang.String;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;II),RunMatlabCommand(Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;),successful">
+        <children xsi:type="editmodel:CompartmentEditModel" size="117,54">
+          <children xsi:type="editmodel:AttributeEditModel" name="result" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#result"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="startTime" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#startTime"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="successful" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#successful"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="127,126">
+          <children xsi:type="editmodel:MethodEditModel" name="RunMatlabCommand" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#RunMatlabCommand(Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="executeCommand" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#executeCommand(Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;Lde.tu_berlin.pes.memo.parser.matlab.RunMatlabCommand.Command;Ljava.lang.String;I)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="run" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#run()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="runEvalCommand" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#runEvalCommand(Ljava.lang.String;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;II)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="runGetVarCommand" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#runGetVarCommand(Ljava.lang.String;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;II)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="setCommand" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#setCommand(Lde.tu_berlin.pes.memo.parser.matlab.RunMatlabCommand.Command;Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="waitForResult" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand#waitForResult(I)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="107,91">
+          <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.0/@children.4/@children.3/@sourceConnections.0" name="Command" location="1705,753" size="107,89" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand$Command" runTimeClassModel="getVariable%,eval%">
+            <children xsi:type="editmodel:CompartmentEditModel" size="73,36">
+              <children xsi:type="editmodel:EnumerationLiteralEditModel" name="eval" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand$Command#eval%"/>
+              <children xsi:type="editmodel:EnumerationLiteralEditModel" name="getVariable" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand$Command#getVariable%"/>
+            </children>
+            <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+          </children>
+        </children>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand-Soyatec::Import->de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand$Command" source="//@children.0/@children.4/@children.3" target="//@children.0/@children.4/@children.3/@children.2/@children.0" targetEnd="//@children.0/@children.4/@children.3/@sourceConnections.0/@children.2" label="//@children.0/@children.4/@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.4/@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="175,198" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,24"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector*de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand-Soyatec::Import->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector" source="//@children.0/@children.4/@children.3" target="//@children.0/@children.4/@children.1" targetEnd="//@children.0/@children.4/@children.3/@sourceConnections.1/@children.2" label="//@children.0/@children.4/@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.4/@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,172" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="216,150"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.4/@children.0/@sourceConnections.1" name="MatlabPortEvaluation" location="238,414" size="178,121" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation" runTimeClassModel="MatlabPortEvaluation(Lde.tu_berlin.pes.memo.model.impl.Model;Ljava.util.HashMap;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;Z),evaluate(),get_matlabConection(),MatlabPortEvaluation(Lde.tu_berlin.pes.memo.model.impl.Model;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;Z)">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="130,72">
+          <children xsi:type="editmodel:MethodEditModel" name="MatlabPortEvaluation" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation#MatlabPortEvaluation(Lde.tu_berlin.pes.memo.model.impl.Model;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;Z)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="MatlabPortEvaluation" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation#MatlabPortEvaluation(Lde.tu_berlin.pes.memo.model.impl.Model;Ljava.util.HashMap;Lde.tu_berlin.pes.memo.parser.matlab.MatlabConnector;Z)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="evaluate" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation#evaluate()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="get_matlabConection" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation#get_matlabConection()"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector*de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation-Soyatec::Import->de.tu_berlin.pes.memo.parser.matlab/MatlabConnector" source="//@children.0/@children.4/@children.4" target="//@children.0/@children.4/@children.1" targetEnd="//@children.0/@children.4/@children.4/@sourceConnections.0/@children.2" label="//@children.0/@children.4/@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.4/@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="125,0" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="51,301"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/ReturnFormatter" source="//@children.0/@children.4/@children.4" target="//@children.0/@children.4/@children.2" targetEnd="//@children.0/@children.4/@children.4/@sourceConnections.1/@children.2" label="//@children.0/@children.4/@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.4/@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,63" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="146,42"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" id="de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation-Standard::Call->de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand*de.tu_berlin.pes.memo.parser.matlab/MatlabPortEvaluation-Soyatec::Import->de.tu_berlin.pes.memo.parser.matlab/RunMatlabCommand" source="//@children.0/@children.4/@children.4" target="//@children.0/@children.4/@children.3" targetEnd="//@children.0/@children.4/@children.4/@sourceConnections.2/@children.2" label="//@children.0/@children.4/@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@children.4/@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="178,43" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,234"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab-Standard::Instantiate->com.modelengineers.jmbridge.api*de.tu_berlin.pes.memo.parser.matlab-Standard::Call->com.modelengineers.jmbridge.api*de.tu_berlin.pes.memo.parser.matlab-Soyatec::Import->com.modelengineers.jmbridge.api" source="//@children.0/@children.4" target="//@children.0/@children.6" targetEnd="//@children.0/@children.4/@sourceConnections.0/@children.2" label="//@children.0/@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate, Call»" size="119,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="196,547" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="126,0"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.matlab-Soyatec::Import->de.tu_berlin.pes.memo.model.impl*de.tu_berlin.pes.memo.parser.matlab-Standard::Instantiate->de.tu_berlin.pes.memo.model.impl*de.tu_berlin.pes.memo.parser.matlab-Standard::Call->de.tu_berlin.pes.memo.model.impl" source="//@children.0/@children.4" target="//@children.0/@children.7" targetEnd="//@children.0/@children.4/@sourceConnections.1/@children.2" label="//@children.0/@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate, Call»" size="119,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,531" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="179,0"/>
+      </sourceConnections>
+    </children>
+    <children xsi:type="editmodel:PackageEditModel" name="de.tu_berlin.pes.memo.parser.persistence" location="18,304" size="334,393" id="de.tu_berlin.pes.memo.parser.persistence">
+      <children xsi:type="editmodel:ClassEditModel" name="MeMoPersistenceManager" location="57,20" size="209,355" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager" runTimeClassModel="sessionFactory,getItemsByHQL(Ljava.lang.String;),runCriteriaRequest(Lorg.hibernate.Criteria;),getDatabases(),saveModelToDB(Ledu.tum.cs.simulink.builder.MDLSection;Z),dropDatabase(Ljava.lang.String;),generateDBName(Ljava.lang.String;),url,getItemsByCriteria(Ljava.lang.Class;Ljava.util.List;),databaseName,switchDatabase(Ljava.lang.String;),parentURL,runSQLRequest(Ljava.lang.String;),logger,clearDatatbaseShema(Z),createDatabase(Ljava.lang.String;),runGUICriteriaRequest(ZLjava.lang.Class;Ljava.lang.String;Ljava.lang.String;)">
+        <children xsi:type="editmodel:CompartmentEditModel" size="176,90">
+          <children xsi:type="editmodel:AttributeEditModel" name="databaseName" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#databaseName"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="logger" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#logger"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="parentURL" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#parentURL"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="sessionFactory" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#sessionFactory"/>
+          <children xsi:type="editmodel:AttributeEditModel" name="url" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#url"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="137,216">
+          <children xsi:type="editmodel:MethodEditModel" name="clearDatatbaseShema" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#clearDatatbaseShema(Z)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="createDatabase" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#createDatabase(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="dropDatabase" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#dropDatabase(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="generateDBName" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#generateDBName(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getDatabases" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#getDatabases()"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getItemsByCriteria" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#getItemsByCriteria(Ljava.lang.Class;Ljava.util.List;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="getItemsByHQL" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#getItemsByHQL(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="runCriteriaRequest" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#runCriteriaRequest(Lorg.hibernate.Criteria;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="runGUICriteriaRequest" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#runGUICriteriaRequest(ZLjava.lang.Class;Ljava.lang.String;Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="runSQLRequest" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#runSQLRequest(Ljava.lang.String;)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="saveModelToDB" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#saveModelToDB(Ledu.tum.cs.simulink.builder.MDLSection;Z)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="switchDatabase" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager#switchDatabase(Ljava.lang.String;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager-Standard::Call->de.tu_berlin.pes.memo.parser/MeMoParserPlugin" source="//@children.0/@children.5/@children.0" target="//@children.0/@children.2" targetEnd="//@children.0/@children.5/@children.0/@sourceConnections.0/@children.2" label="//@children.0/@children.5/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.5/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="209,104" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="0,78"/>
+        </sourceConnections>
+        <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.persistence/MeMoPersistenceManager-Standard::Call->de.tu_berlin.pes.memo.parser/ModelBuilder" source="//@children.0/@children.5/@children.0" target="//@children.0/@children.3" targetEnd="//@children.0/@children.5/@children.0/@sourceConnections.1/@children.2" label="//@children.0/@children.5/@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.5/@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+          <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="54,0" attachSource="true"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="72,103"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.persistence-Soyatec::Import->org.hibernate*de.tu_berlin.pes.memo.parser.persistence-Standard::Call->org.hibernate" source="//@children.0/@children.5" target="//@children.0/@children.8" targetEnd="//@children.0/@children.5/@sourceConnections.0/@children.2" label="//@children.0/@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="90,393" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="60,0"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.parser.persistence-Soyatec::Import->de.tu_berlin.pes.memo.model.impl" source="//@children.0/@children.5" target="//@children.0/@children.7" targetEnd="//@children.0/@children.5/@sourceConnections.1/@children.2" label="//@children.0/@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="322,393" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="10,0"/>
+      </sourceConnections>
+    </children>
+    <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.0/@children.4/@sourceConnections.0" name="com.modelengineers.jmbridge.api" location="726,766" size="254,60" id="com.modelengineers.jmbridge.api"/>
+    <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.0/@children.4/@sourceConnections.1 //@children.0/@children.5/@sourceConnections.1" name="de.tu_berlin.pes.memo.model.impl" location="330,795" size="257,60" id="de.tu_berlin.pes.memo.model.impl"/>
+    <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.0/@children.5/@sourceConnections.0" name="org.hibernate" location="48,772" size="121,60" id="org.hibernate"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

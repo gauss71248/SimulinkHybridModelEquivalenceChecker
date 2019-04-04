@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<subclass name="Junction" extends="StateflowItem"  discriminator-value="junction">
+	
+		<property name="parentId" column="PARENT_ID" />
+		
+		<set table="inTransitions" name="inTransitions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="DST_ID" />
+			<many-to-many column="TRANSITION_ID" class="Transition"
+				not-found="ignore" />
+		</set>
+		<set table="outTransitions" name="outTransitions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="SRC_ID" />
+			<many-to-many column="TRANSITION_ID" class="Transition"
+				not-found="ignore" />
+		</set>
+	</subclass>
+
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<class name="SimulinkItem" table="SL_ITEM" abstract="true">
+		<id name="id" column="SL_ITEM_ID">
+			<generator class="assigned" />
+		</id>
+		<discriminator column="TYPE" type="string"/>
+		<map name="parameter" table="parameters" lazy="false" cascade="all-delete-orphan">
+			<key column="id" />
+			<map-key column="p_key" type="string"/>
+   			<element column="p_value" type="string" length="32768" />
+		</map>
+	</class>
+
+</hibernate-mapping>

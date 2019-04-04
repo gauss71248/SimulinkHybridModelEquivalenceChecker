@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+    
+	<subclass name="Port" extends="SimulinkItem"
+		discriminator-value="port">
+		<join table="PORT"  >
+			<key column="SL_ITEM_ID" />
+			<property name="name" column="PORT_NAME"/>
+			<property name="number" column="PORT_NR"/>
+		</join>
+    </subclass>
+
+</hibernate-mapping>

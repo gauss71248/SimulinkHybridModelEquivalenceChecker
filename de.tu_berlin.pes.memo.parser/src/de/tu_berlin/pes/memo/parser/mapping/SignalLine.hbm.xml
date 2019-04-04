@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+    
+    <subclass name="SignalLine" extends="SimulinkItem"
+		discriminator-value="signalLine">
+		
+		<set name="signalDestinations" table="signal_destinations" cascade="delete" lazy="false">
+			<key column="signal_line"/>
+			<many-to-many class="SignalLine" column="signal_destination"/>
+		</set>
+		
+		<set name="signalOrigins" table="signal_origins" cascade="delete" lazy="false">
+			<key column="signal_line"/>
+			<many-to-many class="SignalLine" column="signal_origin"/>
+		</set>
+		
+		<list name="orderedSignalOrigins" table="ordered_signal_origins" cascade="save-update, delete" lazy="false">
+			<key column="signal_line"/>
+			<list-index column="index"/>
+			<one-to-many class="ConcurrentSignalLineOrigins"/>
+		</list>
+		
+        <join table="SignalLine"  >
+			<key column="SL_ITEM_ID" />
+        <property name="name" column="SIGNALLINE_NAME"/>
+        <property name="isBranched" column="IS_BRANCHED" type="yes_no"/>
+		<many-to-one name="srcPort" class="Port" column="SRC_PORT_ID" cascade="delete" lazy="false" not-found="ignore"/>
+		<many-to-one name="dstPort" class="Port" column="TGT_PORT_ID" cascade="delete" lazy="false" not-found="ignore"/>
+		<many-to-one name="srcBlock" class="Block" column="SRC_BLOCK_ID" cascade="delete" lazy="false" not-found="ignore"/>
+		<many-to-one name="dstBlock" class="Block" column="TGT_Block_ID" cascade="delete" lazy="false" not-found="ignore"/>
+		</join>
+	</subclass>
+	
+	<class name="ConcurrentSignalLineOrigins">
+		<id column="CONCURRENT_ORIGINS_ID" type="long">
+			<generator class="increment"/>
+		</id>
+		<set name="concurrentOrigins" table="concurrent_signal_origins" cascade="delete" lazy="false">
+			<key column="origins_object"/>
+			<many-to-many class="SignalLine" column="origins"/>
+		</set>
+	</class>
+
+</hibernate-mapping>

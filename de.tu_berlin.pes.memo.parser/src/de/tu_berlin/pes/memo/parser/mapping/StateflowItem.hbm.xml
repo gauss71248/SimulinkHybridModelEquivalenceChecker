@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<class name="StateflowItem" table="SF_ITEM" abstract="true">
+		<id name="id" column="SF_ITEM_ID">
+			<generator class="assigned" />
+		</id>
+		<discriminator column="TYPE" type="string"/>
+		<property name="stateFlowId" type="int"/>
+		<map name="parameter" table="sf_parameters" lazy="false" cascade="all-delete-orphan">
+			<key column="id" />
+			<map-key column="p_key" type="string"/>
+   			<element column="p_value" type="string" length="2048"/>
+		</map>
+	</class>
+
+</hibernate-mapping>

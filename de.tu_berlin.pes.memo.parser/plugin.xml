@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="de.tu_berlin.pes.memo.objectContribution1"
+            nameFilter="*.mdl"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="de.tu_berlin.pes.memo.parser.actions.ParseSimulinkModelAction"
+               enablesFor="1"
+               icon="icons/memo_small.png"
+               id="de.tu_berlin.pes.memo.action2"
+               label="Parse Model">
+         </action>
+         <filter
+               name="projectNature"
+               value="de.tu_berlin.pes.memo.project.projectNature">
+         </filter>
+      </objectContribution>
+      <objectContribution
+            id="de.tu_berlin.pes.memo.parser.xml_right_click"
+            nameFilter="*.xml"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="de.tu_berlin.pes.memo.parser.actions.ParseSimulinkModelAction"
+               enablesFor="1"
+               icon="icons/memo_small.png"
+               id="de.tu_berlin.pes.memo.action2"
+               label="Parse Model">
+         </action>
+         <filter
+               name="projectNature"
+               value="de.tu_berlin.pes.memo.project.projectNature">
+         </filter>
+            
+      </objectContribution>
+      <objectContribution
+            id="de.tu_berlin.pes.memo.parser.slx_right_click"
+            nameFilter="*.slx"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="de.tu_berlin.pes.memo.parser.actions.ParseSimulinkModelAction"
+               enablesFor="1"
+               icon="icons/memo_small.png"
+               id="de.tu_berlin.pes.memo.action2"
+               label="Parse Model">
+         </action>
+         <filter
+               name="projectNature"
+               value="de.tu_berlin.pes.memo.project.projectNature">
+         </filter>
+            
+      </objectContribution>
+      <objectContribution
+            id="de.tu_berlin.pes.memo.parser.slx_writeback"
+            nameFilter="*.slx"
+            objectClass="org.eclipse.core.resources.IFile">
+            <action
+            	class="de.tu_berlin.pes.memo.parser.slx.WriteBackAction"
+            	 enablesFor="1"
+              	 icon="icons/memo_small.png"
+              	 id="de.tu_berlin.pes.memo.action2"
+              	 label="Write Model">
+            </action>
+      </objectContribution>
+      <objectContribution
+            id="de.tu_berlin.pes.memo.parser.slx_writeback"
+            nameFilter="*.slx"
+            objectClass="org.eclipse.core.resources.IFile">
+            <action
+            	class="de.tu_berlin.pes.memo.parser.slx.WriteLayoutedModelAction"
+            	 enablesFor="1"
+              	 icon="icons/memo_small.png"
+              	 id="de.tu_berlin.pes.memo.action3"
+              	 label="Write layouted Model">
+            </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="de.tu_berlin.pes.memo.analysis.boogie.results"
+            class="de.tu_berlin.pes.memo.parser.persistence.views.ActiveDBView"
+            icon="icons/memo_small.png"
+            id="de.tu_berlin.pes.memo.parser.activedbview"
+            name="Data Bases"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

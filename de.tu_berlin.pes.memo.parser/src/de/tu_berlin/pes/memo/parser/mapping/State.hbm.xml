@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<subclass name="State" extends="StateflowItem"
+		discriminator-value="state">
+
+		<set table="childTransitions" name="childTransitions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATE_ID" />
+			<many-to-many column="TRANSITION_ID" class="Transition"
+				not-found="ignore" />
+		</set>
+		<set table="childStates" name="childStates" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATE_ID" />
+			<many-to-many column="PARENT_STATE_ID" class="State"
+				not-found="ignore" />
+		</set>
+		<set table="childJunctions" name="childJunctions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="STATE_ID" />
+			<many-to-many column="JUNCTION_ID" class="Junction"
+				not-found="ignore" />
+		</set>
+		<set table="inTransitions" name="inTransitions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="DST_ID" />
+			<many-to-many column="TRANSITION_ID" class="Transition"
+				not-found="ignore" />
+		</set>
+		<set table="outTransitions" name="outTransitions" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="SRC_ID" />
+			<many-to-many column="TRANSITION_ID" class="Transition"
+				not-found="ignore" />
+		</set>
+		<set table="localEvents" name="localEvents" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="EVENT_ID" class="Event" not-found="ignore" />
+		</set>
+		<set table="localData" name="localData" cascade="all-delete-orphan"
+			lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="DATA_ID" class="Data" not-found="ignore" />
+		</set>
+		
+		<join table="STATE">
+			<key column="SF_ITEM_ID" />
+			<property name="name" column="name" type="string" length="2048" />
+			<property name="parentId" column="PARENT_ID" />
+		</join>
+	</subclass>
+
+</hibernate-mapping>

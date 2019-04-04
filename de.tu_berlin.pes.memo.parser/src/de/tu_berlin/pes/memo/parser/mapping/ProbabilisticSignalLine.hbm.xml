@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+    
+    <subclass name="ProbabilisticSignalLine" extends="SignalLine"
+		discriminator-value="probabilisticSignalLine">
+				
+        <join table="ProbabilisticSignalLine"  >
+			<key column="SL_ITEM_ID" />
+        <property name="probability" column="PROBABILISTIC_SIGNALLINE_PROB"/>
+		</join>
+	</subclass>
+</hibernate-mapping>

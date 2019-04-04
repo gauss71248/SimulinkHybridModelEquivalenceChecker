@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="de.tu_berlin.pes.memo.model.impl">
+
+	<subclass name="Block" extends="SimulinkItem"
+		discriminator-value="block">
+		<set table="inSignals" name="inSignals" cascade="all-delete-orphan" lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="SIGNALLINE_ID" class="SignalLine"
+				not-found="ignore" />
+		</set>
+		<set table="outSignals" name="outSignals" cascade="all-delete-orphan" lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="SIGNALLINE_ID" class="SignalLine"
+				not-found="ignore" />
+		</set>
+		<set table="inPorts" name="inPorts" cascade="all-delete-orphan" lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="PORT_ID" class="Port"
+				not-found="ignore" />
+		</set>
+		<set table="outPorts" name="outPorts" cascade="all-delete-orphan" lazy="false">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="Port_ID" class="Port"
+				not-found="ignore" />
+		</set>
+				<set table="lConnPorts" name="lConnPorts" cascade="all-delete-orphan" lazy="true">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="PORT_ID" class="Port"
+				not-found="ignore" />
+		</set>
+		<set table="rConnPorts" name="rConnPorts" cascade="all-delete-orphan" lazy="true">
+			<key column="SL_ITEM_ID" />
+			<many-to-many column="Port_ID" class="Port"
+				not-found="ignore" />
+		</set>
+		
+		<join table="BLOCK"  >
+			<key column="SL_ITEM_ID" />
+			<property name="level" column="level" />
+			<property name="name" column="name" />
+			<property name="type" column="type" />
+			<many-to-one name = "enablePort" class="Port" not-null="false" 
+				not-found="ignore" cascade="all" />
+			<many-to-one name = "triggerPort" class="Port" not-null="false" 
+				not-found="ignore" cascade="all" />
+			<many-to-one name = "statePort" class="Port" not-null="false" 
+				not-found="ignore" cascade="all" />
+			<many-to-one name = "ifactionPort" class="Port" not-null="false" 
+				not-found="ignore" cascade="all" />
+			<many-to-one name="parent" class="SimulinkItem" not-null="false" 
+				not-found="ignore" cascade="all" />
+			<many-to-one name = "defaultParamters" class="BlockDefault" not-null="false" 
+				not-found="ignore" cascade="all" />
+			<!--many-to-one name="parentModel" class="Model" not-null="false"
+				not-found="ignore" cascade="all" /-->
+			<many-to-one name="parentModel" class="Model" not-null="false"
+				not-found="ignore" cascade="all" />
+			<property name="reference" column="is_reference" type="yes_no"/>
+		</join>
+
+	</subclass>
+
+</hibernate-mapping>

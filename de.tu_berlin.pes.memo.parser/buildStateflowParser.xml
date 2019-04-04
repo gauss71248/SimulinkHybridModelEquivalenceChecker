@@ -1,0 +1,139 @@
+<project name="de.tu_berlin.pes.memo.parser.stateflow" default="compile" basedir=".">
+
+	<path id="evaluation.jar.classpath">
+			<fileset dir="lib" includes="**/*.jar" />
+		</path>
+  <property name="grammar"  location="grammar" />
+  <property name="flex"    	location="flex" />
+  <property name="libs" 	location="lib" />
+  <property name="dist" 	location="dist" />	
+  <property name="src"     	location="src" />
+  <property name="java"    	location="java" />
+  <property name="bin" 		location="bin" />
+  <property name="package" 	location="de.tu_berlin.pes.memo.parser.stateflow.stateflowparser" />
+
+  <!-- path to cup libraries -->
+  <property name="lib"      value="lib" />
+	
+  <path id="binaries">    
+  	<pathelement location="${lib}" />    
+  	<fileset dir="${lib}">
+      <include name="**/*.jar" />
+      <include name="**/*.zip" />
+    </fileset>
+    <pathelement path="${java.class.path}" />
+    <pathelement path="${bin}" />
+  </path>
+
+  <path id="libraries">
+    <pathelement location="${lib}" />
+    <fileset dir="${lib}">
+      <include name="**/*.jar" />
+      <include name="**/*.zip" />
+    </fileset>
+    <pathelement path="${java.class.path}" />
+  	<pathelement path="${bin}" />
+  </path>
+
+	
+  <!-- This is JFlex  -->
+  <taskdef name="jflex" 
+           classname="JFlex.anttask.JFlexTask" 
+  			classpathref="libraries" 
+  />
+  	
+  <!-- This is Cup -->
+  <taskdef name="cup" 
+        classname="java_cup.anttask.CUPTask" 
+  		classpathref="libraries"
+  />
+  	
+
+  <target name="init">
+    <mkdir dir="${bin}"/>
+    <mkdir dir="${java}"/>
+  </target>
+
+	
+  <target name="cup" depends="init">
+	<cup srcfile="${grammar}/StateflowTransitionParser.cup" destdir="${src}" interface="true" parser="StateflowTransitionParser" symbols="StateflowTransitionScannerSymbol" expect="20" dump_grammar="no" />
+  	<cup srcfile="${grammar}/StateflowStateParser.cup" destdir="${src}" interface="true" parser="StateflowStateParser" symbols="StateflowStateScannerSymbol" expect="30" dump_grammar="no" />
+  </target>
+	
+
+ 	<target name="jflex" depends="cup">
+ 		<jflex file="${grammar}/StateflowTransitionScanner.jflex" destdir="${src}" />
+ 		<jflex file="${grammar}/StateflowStateScanner.jflex" destdir="${src}" />
+ 	</target>
+	
+
+  <target name="copy_src" depends="jflex">
+   <copy todir="${java}">
+     <fileset dir="${src}" includes="**/**.java" />
+   </copy>
+  </target>
+
+  <target name="compile" depends="copy_src">
+    <javac srcdir="${java}" destdir="${bin}" debug="on">
+    	<!-- <compilerarg value="-Xlint:unchecked"/> -->
+      	<classpath refid="libraries" />
+    </javac>
+  </target>
+
+	<target name="run" depends="clean, compile">		
+		<java fork="true" failonerror="yes" classname="de.tu_berlin.pes.memo.parser.stateflow.testenvironment.ParserTest">
+			<classpath refid="binaries" />
+		      <arg line=""/>
+		</java>
+	</target>
+	
+  <target name="clean">
+
+  	<delete dir="${java}" />
+    <delete dir="${bin}" />
+
+  	<delete file="${src}/de/tu_berlin/pes/memo/parser/stateflow/stateflowparser/StateflowTransitionScannerSymbol.java"></delete>
+  	<delete file="${src}/de/tu_berlin/pes/memo/parser/stateflow/stateflowparser/StateflowTransitionScanner.java"></delete>
+  	<delete file="${src}/de/tu_berlin/pes/memo/parser/stateflow/stateflowparser/StateflowTransitionParser.java"></delete>
+  	
+  	<delete file="${src}/de/tu_berlin/pes/memo/parser/stateflow/stateflowparser/StateflowStateScannerSymbol.java"></delete>
+  	<delete file="${src}/de/tu_berlin/pes/memo/parser/stateflow/stateflowparser/StateflowStateScanner.java"></delete>
+  	<delete file="${src}/de/tu_berlin/pes/memo/parser/stateflow/stateflowparser/StateflowStateParser.java"></delete>
+  	
+  </target>
+
+	<target name="buildjar" depends="compile">
+			<property name="jar.name" value="${dist}/StateFlowLabelParser.jar" />
+			<manifestclasspath property="jar.classpath" jarfile="${jar.name}">
+				<classpath refid="evaluation.jar.classpath" />
+			</manifestclasspath>
+
+			<!-- copy relevant library files -->
+			<mkdir dir="${dist}/lib" />
+			<copy todir="${dist}/lib">
+				<fileset dir="${libs}">
+					<include name="java-cup-11a-runtime.jar" />
+					<include name="java-cup-11a.jar" />
+				</fileset>
+			</copy>
+			
+			
+			<jar jarfile="${jar.name}">
+				<fileset dir="${bin}">
+					<include name="**/*.class" />
+				</fileset>
+				<fileset dir="${dist}">
+					<include name="lib/**/*.*" />
+				</fileset>
+				<manifest>
+					<attribute name="Main-Class" value="UserInterfaces.ParserWrapper" />
+					<attribute name="Class-Path" value="${jar.classpath}" />
+				</manifest>
+			</jar>
+
+			<!-- remove library files from dist directory -->
+			<delete dir="${dist}/libs" />
+		</target>
+
+
+</project>
