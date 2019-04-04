@@ -8,3 +8,5 @@ Beware, the coding is prototypic in nature and not very well documented. This is
 ## Core Engine for Simulink Model Equivalence Checking
 
 The core is at the path de.tu_berlin.sese.cormorant.frameworkInstantiation/src/de/tu_berlin/sese/cormorant/frameworkInstantiation/EquivalenceVerifier
+
+de.tu-berlin.de.pes.cormorant.reactoring is also a Scala-based package being part of my PhD implementation
