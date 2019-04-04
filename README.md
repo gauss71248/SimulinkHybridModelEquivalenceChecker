@@ -4,3 +4,7 @@ The core, which forms the equivalence checker, is written in Scala.
 
 All modules are Eclipse extensions. A requirement is the Eclipse modelling distribution.
 Beware, the coding is prototypic in nature and not very well documented. This is quite common in research projects.
+
+## Core Engine for Simulink Model Equivalence Checking
+
+The core is in the package de.tu_berlin.sese.cormorant.frameworkInstantiation/src/de/tu_berlin/sese/cormorant/frameworkInstantiation/EquivalenceVerifier
