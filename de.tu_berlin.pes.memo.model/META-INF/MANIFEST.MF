@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Memo Model
+Bundle-SymbolicName: de.tu_berlin.pes.memo.model
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.tu_berlin.pes.memo.model.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.tu_berlin.pes.memo;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: de.tu_berlin.pes.memo.model.impl,
+ de.tu_berlin.pes.memo.model.util,
+ java_cup.runtime,
+ org.conqat.lib.commons.collections,
+ org.conqat.lib.commons.logging,
+ org.conqat.lib.simulink.builder
+Bundle-ClassPath: .,
+ lib/ccsm-libs/ccsm-commons.jar,
+ lib/ccsm-libs/cup-runtime.jar
+Comment-this-back-in-if-necessary: Import-Package: de.tu_berlin.pes.memo.parser.matlab

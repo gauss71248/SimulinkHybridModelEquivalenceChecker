@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="impl" size="2809,1852" id="de.tu_berlin.pes.memo.model.impl" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledX="-2" scrolledY="92" tag="1000" key="32303037303533312D313030302064652E74755F6265726C696E2E7065732E6D656D6F2E6D6F64656C2F416C6578">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.2" name="Configuration" location="9,44" size="128,121" id="de.tu_berlin.pes.memo.model.impl/Configuration" runTimeClassModel="name,Configuration(),Configuration(ILedu.tum.cs.simulink.builder.MDLSection;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/Configuration#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Configuration" id="de.tu_berlin.pes.memo.model.impl/Configuration#Configuration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Configuration" id="de.tu_berlin.pes.memo.model.impl/Configuration#Configuration(ILedu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Configuration#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1" name="ChartBlock" location="570,388" size="111,87" id="de.tu_berlin.pes.memo.model.impl/ChartBlock" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart@chart+de.tu_berlin.pes.memo.model.impl/ChartBlock@" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,23" id="de.tu_berlin.pes.memo.model.impl/StateflowChart@chart+de.tu_berlin.pes.memo.model.impl/ChartBlock@|de.tu_berlin.pes.memo.model.impl/ChartBlock#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="chart" location="0,73" id="de.tu_berlin.pes.memo.model.impl/StateflowChart@chart+de.tu_berlin.pes.memo.model.impl/ChartBlock@|de.tu_berlin.pes.memo.model.impl/StateflowChart#chart" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - chart" location="884,379" size="35,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="913,407" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/ChartBlock@chartBlock+de.tu_berlin.pes.memo.model.impl/StateflowChart@" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="chartBlock" location="111,74" id="de.tu_berlin.pes.memo.model.impl/ChartBlock@chartBlock+de.tu_berlin.pes.memo.model.impl/StateflowChart@|de.tu_berlin.pes.memo.model.impl/ChartBlock#chartBlock" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - chartBlock" location="687,468" size="61,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="687,440" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,108" id="de.tu_berlin.pes.memo.model.impl/ChartBlock@chartBlock+de.tu_berlin.pes.memo.model.impl/StateflowChart@|de.tu_berlin.pes.memo.model.impl/StateflowChart#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/ChartBlock-Standard::Derive->de.tu_berlin.pes.memo.model.impl/Block" source="//@children.1" target="//@children.11" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,52" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="189,35"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.3 //@children.11/@sourceConnections.4 //@children.4/@sourceConnections.1 //@children.4/@sourceConnections.0" name="SignalLine" location="34,598" size="315,337" id="de.tu_berlin.pes.memo.model.impl/SignalLine" runTimeClassModel="setIsBranched(Z),signalDestinations,getIsBranched(),setSignalDestinations(Ljava.util.Set;),SignalLine(),signalOrigins,getSignalDestinations(),getOrderedSignalOrigins(),setOrderedSignalOrigins(Ljava.util.List;),toString(),getSignalOrigins(),SignalLine(IILde.tu_berlin.pes.memo.model.impl.Block;Lde.tu_berlin.pes.memo.model.impl.Block;Lde.tu_berlin.pes.memo.model.impl.Port;Lde.tu_berlin.pes.memo.model.impl.Port;Ljava.lang.String;),lvl,setSignalOrigins(Ljava.util.Set;),name,orderedSignalOrigins">
+    <children xsi:type="editmodel:CompartmentEditModel" size="292,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="lvl" location="35,4" id="de.tu_berlin.pes.memo.model.impl/SignalLine#lvl"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/SignalLine#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="signalDestinations" id="de.tu_berlin.pes.memo.model.impl/SignalLine#signalDestinations"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="signalOrigins" id="de.tu_berlin.pes.memo.model.impl/SignalLine#signalOrigins"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="orderedSignalOrigins" id="de.tu_berlin.pes.memo.model.impl/SignalLine#orderedSignalOrigins"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="148,198">
+      <children xsi:type="editmodel:MethodEditModel" name="SignalLine" id="de.tu_berlin.pes.memo.model.impl/SignalLine#SignalLine(IILde.tu_berlin.pes.memo.model.impl.Block;Lde.tu_berlin.pes.memo.model.impl.Block;Lde.tu_berlin.pes.memo.model.impl.Port;Lde.tu_berlin.pes.memo.model.impl.Port;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SignalLine" id="de.tu_berlin.pes.memo.model.impl/SignalLine#SignalLine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/SignalLine#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIsBranched" id="de.tu_berlin.pes.memo.model.impl/SignalLine#setIsBranched(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOrderedSignalOrigins" id="de.tu_berlin.pes.memo.model.impl/SignalLine#setOrderedSignalOrigins(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSignalDestinations" id="de.tu_berlin.pes.memo.model.impl/SignalLine#getSignalDestinations()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSignalOrigins" id="de.tu_berlin.pes.memo.model.impl/SignalLine#setSignalOrigins(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSignalOrigins" id="de.tu_berlin.pes.memo.model.impl/SignalLine#getSignalOrigins()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSignalDestinations" id="de.tu_berlin.pes.memo.model.impl/SignalLine#setSignalDestinations(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOrderedSignalOrigins" id="de.tu_berlin.pes.memo.model.impl/SignalLine#getOrderedSignalOrigins()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getIsBranched" id="de.tu_berlin.pes.memo.model.impl/SignalLine#getIsBranched()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.1/@sourceConnections.1 //@children.13/@sourceConnections.0" name="StateflowChart" location="927,327" size="173,247" id="de.tu_berlin.pes.memo.model.impl/StateflowChart" runTimeClassModel="StateflowChart(),junctions,transitions,events,StateflowChart(Ledu.tum.cs.simulink.builder.MDLSection;),name,localData,data,states,toString(),localEvents">
+    <children xsi:type="editmodel:CompartmentEditModel" size="150,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="data" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#data"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="events" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#events"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="junctions" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#junctions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="localData" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#localData"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="localEvents" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#localEvents"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="states" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#states"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transitions" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#transitions"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,54">
+      <children xsi:type="editmodel:MethodEditModel" name="StateflowChart" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#StateflowChart()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StateflowChart" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#StateflowChart(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/StateflowChart#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Data" source="//@children.3" target="//@children.9" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,113" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/ChartBlock" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,104" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,43"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Event" source="//@children.3" target="//@children.6" targetEnd="//@children.3/@sourceConnections.2/@children.2" label="//@children.3/@sourceConnections.2/@children.0" sourceEnd="//@children.3/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,220" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,26"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Junction" source="//@children.3" target="//@children.8" targetEnd="//@children.3/@sourceConnections.3/@children.2" label="//@children.3/@sourceConnections.3/@children.0" sourceEnd="//@children.3/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="21,247" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="169,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/State" source="//@children.3" target="//@children.12" targetEnd="//@children.3/@sourceConnections.4/@children.2" label="//@children.3/@sourceConnections.4/@children.0" sourceEnd="//@children.3/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="131,247" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="40,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateflowChart-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Transition" source="//@children.3" target="//@children.5" targetEnd="//@children.3/@sourceConnections.5/@children.2" label="//@children.3/@sourceConnections.5/@children.0" sourceEnd="//@children.3/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,201" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,49"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.1 //@children.11/@sourceConnections.2 //@children.11/@sourceConnections.5 //@children.11/@sourceConnections.6" name="Port" location="539,634" size="126,139" id="de.tu_berlin.pes.memo.model.impl/Port" runTimeClassModel="Port(ILjava.lang.String;),Port(),name,addParameters(Ledu.tum.cs.simulink.builder.MDLSection;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/Port#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Port" id="de.tu_berlin.pes.memo.model.impl/Port#Port(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Port" id="de.tu_berlin.pes.memo.model.impl/Port#Port()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addParameters" id="de.tu_berlin.pes.memo.model.impl/Port#addParameters(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Port#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="de.tu_berlin.pes.memo.model.impl/Port@dstPort+de.tu_berlin.pes.memo.model.impl/SignalLine@" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dstPort" location="33,138" id="de.tu_berlin.pes.memo.model.impl/Port@dstPort+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/Port#dstPort" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dstPort" location="579,779" size="44,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="547,779" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="315,298" id="de.tu_berlin.pes.memo.model.impl/Port@dstPort+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/SignalLine#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="de.tu_berlin.pes.memo.model.impl/Port@srcPort+de.tu_berlin.pes.memo.model.impl/SignalLine@" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="srcPort" location="102,138" id="de.tu_berlin.pes.memo.model.impl/Port@srcPort+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/Port#srcPort" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - srcPort" location="647,779" size="45,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="615,779" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="90,335" id="de.tu_berlin.pes.memo.model.impl/Port@srcPort+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/SignalLine#"/>
+      <bendpoints secondRelativeDimension="442,45" firstRelativeDimension="4,62"/>
+      <bendpoints secondRelativeDimension="0,41" firstRelativeDimension="-438,58"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.5 //@children.12/@sourceConnections.3" name="Transition" location="1334,690" size="104,193" id="de.tu_berlin.pes.memo.model.impl/Transition" runTimeClassModel="parentId,name,Transition(),getChartId(),dst,src,Transition(Ledu.tum.cs.simulink.builder.MDLSection;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="dst" id="de.tu_berlin.pes.memo.model.impl/Transition#dst"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/Transition#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="parentId" id="de.tu_berlin.pes.memo.model.impl/Transition#parentId"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="src" id="de.tu_berlin.pes.memo.model.impl/Transition#src"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Transition" id="de.tu_berlin.pes.memo.model.impl/Transition#Transition()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Transition" id="de.tu_berlin.pes.memo.model.impl/Transition#Transition(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChartId" id="de.tu_berlin.pes.memo.model.impl/Transition#getChartId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Transition#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.2 //@children.12/@sourceConnections.1" name="Event" location="1440,521" size="102,121" id="de.tu_berlin.pes.memo.model.impl/Event" runTimeClassModel="Event(),Event(Ledu.tum.cs.simulink.builder.MDLSection;),name,toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/Event#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Event" id="de.tu_berlin.pes.memo.model.impl/Event#Event()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Event" id="de.tu_berlin.pes.memo.model.impl/Event#Event(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Event#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Model" location="194,74" size="268,265" id="de.tu_berlin.pes.memo.model.impl/Model" runTimeClassModel="modelId,signalLines,nextID(),name,block,configurations,signal,blocks,defaultSections,getBlockById(I),toString(),Model()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="245,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="block" id="de.tu_berlin.pes.memo.model.impl/Model#block"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="blocks" id="de.tu_berlin.pes.memo.model.impl/Model#blocks"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="configurations" id="de.tu_berlin.pes.memo.model.impl/Model#configurations"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="defaultSections" id="de.tu_berlin.pes.memo.model.impl/Model#defaultSections"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="modelId" id="de.tu_berlin.pes.memo.model.impl/Model#modelId"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/Model#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="signal" id="de.tu_berlin.pes.memo.model.impl/Model#signal"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="signalLines" id="de.tu_berlin.pes.memo.model.impl/Model#signalLines"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Model" id="de.tu_berlin.pes.memo.model.impl/Model#Model()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextID" id="de.tu_berlin.pes.memo.model.impl/Model#nextID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Model#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBlockById" id="de.tu_berlin.pes.memo.model.impl/Model#getBlockById(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateMachine@stateMachine+de.tu_berlin.pes.memo.model.impl/Model@" source="//@children.7" target="//@children.13" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="268,94" id="de.tu_berlin.pes.memo.model.impl/StateMachine@stateMachine+de.tu_berlin.pes.memo.model.impl/Model@|de.tu_berlin.pes.memo.model.impl/Model#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="stateMachine" location="0,78" id="de.tu_berlin.pes.memo.model.impl/StateMachine@stateMachine+de.tu_berlin.pes.memo.model.impl/Model@|de.tu_berlin.pes.memo.model.impl/StateMachine#stateMachine" multiplicityLabel="//@children.7/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.7/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - stateMachine" location="817,147" size="74,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="873,175" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/Model-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Block" source="//@children.7" target="//@children.11" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="120,265" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/Model-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Configuration" source="//@children.7" target="//@children.0" targetEnd="//@children.7/@sourceConnections.2/@children.2" label="//@children.7/@sourceConnections.2/@children.0" sourceEnd="//@children.7/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,45" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,75"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.3 //@children.12/@sourceConnections.2" name="Junction" location="779,659" size="191,175" id="de.tu_berlin.pes.memo.model.impl/Junction" runTimeClassModel="parentId,Junction(Ledu.tum.cs.simulink.builder.MDLSection;),getChartId(),inTransitions,outTransitions,Junction(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="inTransitions" id="de.tu_berlin.pes.memo.model.impl/Junction#inTransitions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outTransitions" id="de.tu_berlin.pes.memo.model.impl/Junction#outTransitions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="parentId" id="de.tu_berlin.pes.memo.model.impl/Junction#parentId"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Junction" id="de.tu_berlin.pes.memo.model.impl/Junction#Junction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Junction" id="de.tu_berlin.pes.memo.model.impl/Junction#Junction(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChartId" id="de.tu_berlin.pes.memo.model.impl/Junction#getChartId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Junction#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.12/@sourceConnections.0" name="Data" location="1446,389" size="90,103" id="de.tu_berlin.pes.memo.model.impl/Data" runTimeClassModel="Data(),Data(Ledu.tum.cs.simulink.builder.MDLSection;),name,toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Data" id="de.tu_berlin.pes.memo.model.impl/Data#Data()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Data" id="de.tu_berlin.pes.memo.model.impl/Data#Data(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Data#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.0" name="BlockDefault" location="12,182" size="122,139" id="de.tu_berlin.pes.memo.model.impl/BlockDefault" runTimeClassModel="BlockDefault(ILjava.lang.String;),BlockDefault(I),BlockDefault(),type,BlockDefault(ILedu.tum.cs.simulink.builder.MDLSection;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="de.tu_berlin.pes.memo.model.impl/BlockDefault#type"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,72">
+      <children xsi:type="editmodel:MethodEditModel" name="BlockDefault" id="de.tu_berlin.pes.memo.model.impl/BlockDefault#BlockDefault(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="BlockDefault" id="de.tu_berlin.pes.memo.model.impl/BlockDefault#BlockDefault(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="BlockDefault" id="de.tu_berlin.pes.memo.model.impl/BlockDefault#BlockDefault()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="BlockDefault" id="de.tu_berlin.pes.memo.model.impl/BlockDefault#BlockDefault(ILedu.tum.cs.simulink.builder.MDLSection;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.1 //@children.1/@sourceConnections.2" name="Block" location="220,405" size="189,445" id="de.tu_berlin.pes.memo.model.impl/Block" runTimeClassModel="Block(),Block(IILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;),getFullQualifiedName(Z),getFullPath(),outSignals,getParameter(Ljava.lang.String;),type,reference,toString(),inPorts,getFullQualifiedName(),getInSignalLineByInPort(Lde.tu_berlin.pes.memo.model.impl.Port;),level,outPorts,isReference(),name,getOutSignalLinesByOutPort(Lde.tu_berlin.pes.memo.model.impl.Port;),lConnPorts,rConnPorts,hashCode(),inSignals,Block(IILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;Ljava.lang.String;),setReference(Z)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,180">
+      <children xsi:type="editmodel:AttributeEditModel" name="inPorts" id="de.tu_berlin.pes.memo.model.impl/Block#inPorts"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="inSignals" id="de.tu_berlin.pes.memo.model.impl/Block#inSignals"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lConnPorts" id="de.tu_berlin.pes.memo.model.impl/Block#lConnPorts"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="level" id="de.tu_berlin.pes.memo.model.impl/Block#level"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/Block#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outPorts" id="de.tu_berlin.pes.memo.model.impl/Block#outPorts"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outSignals" id="de.tu_berlin.pes.memo.model.impl/Block#outSignals"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rConnPorts" id="de.tu_berlin.pes.memo.model.impl/Block#rConnPorts"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="de.tu_berlin.pes.memo.model.impl/Block#type"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="reference" id="de.tu_berlin.pes.memo.model.impl/Block#reference"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="166,216">
+      <children xsi:type="editmodel:MethodEditModel" name="Block" id="de.tu_berlin.pes.memo.model.impl/Block#Block(IILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Block" id="de.tu_berlin.pes.memo.model.impl/Block#Block(IILde.tu_berlin.pes.memo.model.impl.ModelItem;Ledu.tum.cs.simulink.builder.MDLSection;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Block" id="de.tu_berlin.pes.memo.model.impl/Block#Block()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFullPath" id="de.tu_berlin.pes.memo.model.impl/Block#getFullPath()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getParameter" id="de.tu_berlin.pes.memo.model.impl/Block#getParameter(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hashCode" id="de.tu_berlin.pes.memo.model.impl/Block#hashCode()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/Block#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFullQualifiedName" id="de.tu_berlin.pes.memo.model.impl/Block#getFullQualifiedName(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setReference" id="de.tu_berlin.pes.memo.model.impl/Block#setReference(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOutSignalLinesByOutPort" id="de.tu_berlin.pes.memo.model.impl/Block#getOutSignalLinesByOutPort(Lde.tu_berlin.pes.memo.model.impl.Port;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInSignalLineByInPort" id="de.tu_berlin.pes.memo.model.impl/Block#getInSignalLineByInPort(Lde.tu_berlin.pes.memo.model.impl.Port;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isReference" id="de.tu_berlin.pes.memo.model.impl/Block#isReference()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/BlockDefault@defaultParamters+de.tu_berlin.pes.memo.model.impl/Block@" source="//@children.11" target="//@children.10" targetEnd="//@children.11/@sourceConnections.0/@children.2" label="//@children.11/@sourceConnections.0/@children.0" sourceEnd="//@children.11/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" id="de.tu_berlin.pes.memo.model.impl/BlockDefault@defaultParamters+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Block#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="defaultParamters" location="112,139" id="de.tu_berlin.pes.memo.model.impl/BlockDefault@defaultParamters+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/BlockDefault#defaultParamters" multiplicityLabel="//@children.11/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.11/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - defaultParamters" location="25,327" size="92,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="131,327" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/Port@statePort+de.tu_berlin.pes.memo.model.impl/Block@" source="//@children.11" target="//@children.4" targetEnd="//@children.11/@sourceConnections.1/@children.2" label="//@children.11/@sourceConnections.1/@children.0" sourceEnd="//@children.11/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="189,298" id="de.tu_berlin.pes.memo.model.impl/Port@statePort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Block#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="statePort" location="0,69" id="de.tu_berlin.pes.memo.model.impl/Port@statePort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Port#statePort" multiplicityLabel="//@children.11/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - statePort" location="478,681" size="53,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="525,709" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="de.tu_berlin.pes.memo.model.impl/Port@ifactionPort+de.tu_berlin.pes.memo.model.impl/Block@" source="//@children.11" target="//@children.4" targetEnd="//@children.11/@sourceConnections.2/@children.2" label="//@children.11/@sourceConnections.2/@children.0" sourceEnd="//@children.11/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="189,434" id="de.tu_berlin.pes.memo.model.impl/Port@ifactionPort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Block#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="ifactionPort" location="-1,118" id="de.tu_berlin.pes.memo.model.impl/Port@ifactionPort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Port#ifactionPort" multiplicityLabel="//@children.11/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.11/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - ifactionPort" location="467,731" size="64,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="525,759" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/Block@srcBlock+de.tu_berlin.pes.memo.model.impl/SignalLine@" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.3/@children.2" label="//@children.11/@sourceConnections.3/@children.0" sourceEnd="//@children.11/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="srcBlock" location="0,342" id="de.tu_berlin.pes.memo.model.impl/Block@srcBlock+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/Block#srcBlock" attachSource="true" multiplicityLabel="//@children.11/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - srcBlock" location="161,725" size="52,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="195,753" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="315,127" id="de.tu_berlin.pes.memo.model.impl/Block@srcBlock+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/SignalLine#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/Block@dstBlock+de.tu_berlin.pes.memo.model.impl/SignalLine@" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.4/@children.2" label="//@children.11/@sourceConnections.4/@children.0" sourceEnd="//@children.11/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="dstBlock" location="0,289" id="de.tu_berlin.pes.memo.model.impl/Block@dstBlock+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/Block#dstBlock" attachSource="true" multiplicityLabel="//@children.11/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - dstBlock" location="162,672" size="51,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="195,700" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="315,95" id="de.tu_berlin.pes.memo.model.impl/Block@dstBlock+de.tu_berlin.pes.memo.model.impl/SignalLine@|de.tu_berlin.pes.memo.model.impl/SignalLine#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="de.tu_berlin.pes.memo.model.impl/Port@enablePort+de.tu_berlin.pes.memo.model.impl/Block@" source="//@children.11" target="//@children.4" targetEnd="//@children.11/@sourceConnections.5/@children.2" label="//@children.11/@sourceConnections.5/@children.0" sourceEnd="//@children.11/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="187,394" id="de.tu_berlin.pes.memo.model.impl/Port@enablePort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Block#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="enablePort" location="-1,86" id="de.tu_berlin.pes.memo.model.impl/Port@enablePort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Port#enablePort" multiplicityLabel="//@children.11/@sourceConnections.5/@children.2/@children.1" roleLabel="//@children.11/@sourceConnections.5/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - enablePort" location="470,699" size="61,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="525,727" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="de.tu_berlin.pes.memo.model.impl/Port@triggerPort+de.tu_berlin.pes.memo.model.impl/Block@" source="//@children.11" target="//@children.4" targetEnd="//@children.11/@sourceConnections.6/@children.2" label="//@children.11/@sourceConnections.6/@children.0" sourceEnd="//@children.11/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="187,330" id="de.tu_berlin.pes.memo.model.impl/Port@triggerPort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Block#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="triggerPort" location="-1,34" id="de.tu_berlin.pes.memo.model.impl/Port@triggerPort+de.tu_berlin.pes.memo.model.impl/Block@|de.tu_berlin.pes.memo.model.impl/Port#triggerPort" multiplicityLabel="//@children.11/@sourceConnections.6/@children.2/@children.1" roleLabel="//@children.11/@sourceConnections.6/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - triggerPort" location="471,647" size="60,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="525,675" size="6,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.4" name="State" location="1018,659" size="198,283" id="de.tu_berlin.pes.memo.model.impl/State" runTimeClassModel="childTransitions,State(),localData,getChartId(),inTransitions,outTransitions,localEvents,toString(),State(Ledu.tum.cs.simulink.builder.MDLSection;),parentId,name,childJunctions,childStates">
+    <children xsi:type="editmodel:CompartmentEditModel" size="175,162">
+      <children xsi:type="editmodel:AttributeEditModel" name="childJunctions" id="de.tu_berlin.pes.memo.model.impl/State#childJunctions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="childStates" id="de.tu_berlin.pes.memo.model.impl/State#childStates"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="childTransitions" id="de.tu_berlin.pes.memo.model.impl/State#childTransitions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="inTransitions" id="de.tu_berlin.pes.memo.model.impl/State#inTransitions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="localData" id="de.tu_berlin.pes.memo.model.impl/State#localData"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="localEvents" id="de.tu_berlin.pes.memo.model.impl/State#localEvents"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/State#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outTransitions" id="de.tu_berlin.pes.memo.model.impl/State#outTransitions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="parentId" id="de.tu_berlin.pes.memo.model.impl/State#parentId"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,72">
+      <children xsi:type="editmodel:MethodEditModel" name="State" id="de.tu_berlin.pes.memo.model.impl/State#State()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="State" id="de.tu_berlin.pes.memo.model.impl/State#State(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChartId" id="de.tu_berlin.pes.memo.model.impl/State#getChartId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/State#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/State-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Data" source="//@children.12" target="//@children.9" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="198,46" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,94"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/State-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Event" source="//@children.12" target="//@children.6" targetEnd="//@children.12/@sourceConnections.1/@children.2" label="//@children.12/@sourceConnections.1/@children.0" sourceEnd="//@children.12/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="198,83" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,90"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/State-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Junction" source="//@children.12" target="//@children.8" targetEnd="//@children.12/@sourceConnections.2/@children.2" label="//@children.12/@sourceConnections.2/@children.0" sourceEnd="//@children.12/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,87" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,87"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/State-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/Transition" source="//@children.12" target="//@children.5" targetEnd="//@children.12/@sourceConnections.3/@children.2" label="//@children.12/@sourceConnections.3/@children.0" sourceEnd="//@children.12/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="198,127" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,96"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.0" name="StateMachine" location="899,90" size="227,157" id="de.tu_berlin.pes.memo.model.impl/StateMachine" runTimeClassModel="StateMachine(),stateflowCharts,StateMachine(Ledu.tum.cs.simulink.builder.MDLSection;),name,toString(),addStateflowChart(Lde.tu_berlin.pes.memo.model.impl.StateflowChart;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="204,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="de.tu_berlin.pes.memo.model.impl/StateMachine#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="stateflowCharts" id="de.tu_berlin.pes.memo.model.impl/StateMachine#stateflowCharts"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="121,72">
+      <children xsi:type="editmodel:MethodEditModel" name="StateMachine" id="de.tu_berlin.pes.memo.model.impl/StateMachine#StateMachine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StateMachine" id="de.tu_berlin.pes.memo.model.impl/StateMachine#StateMachine(Ledu.tum.cs.simulink.builder.MDLSection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addStateflowChart" id="de.tu_berlin.pes.memo.model.impl/StateMachine#addStateflowChart(Lde.tu_berlin.pes.memo.model.impl.StateflowChart;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="de.tu_berlin.pes.memo.model.impl/StateMachine#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="de.tu_berlin.pes.memo.model.impl/StateMachine-Soyatec::Import->de.tu_berlin.pes.memo.model.impl/StateflowChart" source="//@children.13" target="//@children.3" targetEnd="//@children.13/@sourceConnections.0/@children.2" label="//@children.13/@sourceConnections.0/@children.0" sourceEnd="//@children.13/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,157" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=2;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler>
+      <guides/>
+    </topRuler>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
