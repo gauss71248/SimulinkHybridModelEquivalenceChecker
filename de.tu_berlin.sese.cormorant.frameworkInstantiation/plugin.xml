@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="de.tu_berlin.sese.cormorant.frameworkInstantiation.actionset"
+            label="Cormorant"
+            visible="true">
+         <action
+               class="de.tu_berlin.sese.cormorant.frameworkInstantiation.actions.InstantiationAction"
+               icon="icons/KorMoran2.png"
+               id="de.tu_berlin.sese.cormorant.frameworkInstantiation.InstantiationAction"
+               label="Equivalence Checker Framework"
+               mode="FORCE_TEXT"
+               style="push"
+               toolbarPath="&quot;Normal/additions&quot;">
+         </action>
+         
+
+      </actionSet>
+   </extension>
+
+</plugin>

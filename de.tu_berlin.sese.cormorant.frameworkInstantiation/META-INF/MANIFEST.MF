@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FrameworkInstantiation
+Singleton: true
+Bundle-SymbolicName: de.tu_berlin.sese.cormorant.frameworkInstantiation;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.tu_berlin.sese.cormorant.frameworkInstantiation.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.tu_berlin.pes.memo.model,
+ de.tu_berlin.pes.memo,
+ de.tu_berlin.pes.memo.parser,
+ org.scala-lang.scala-library,
+ org.scala-lang.scala-reflect,
+ org.eclipse.core.resources
+Bundle-ClassPath: .,
+ lib/JLink/JLink.jar
+Bundle-NativeCode: lib/JLink/SystemFiles/Libraries/MacOSX-x86-64/libJLinkNativeLibrary.dylib; lib/JLink/SystemFiles/Libraries/MacOSX-x86-64/libJLinkNativeLibrary.jnilib; 
+ osname=macosx; processor=x86; processor=x86_64,
+ *
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: de.tu_berlin.sese.cormorant.frameworkInstantiation,
+ de.tu_berlin.sese.cormorant.frameworkInstantiation.EquivalenceVerifier
