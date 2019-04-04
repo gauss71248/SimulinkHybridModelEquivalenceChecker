@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="de.tu_berlin.pes.cormorant.actionset"
+            label="Cormorant"
+            visible="true">
+         <action
+               class="de.tu_berlin.pes.cormorant.ExpressionExtraction.actions.Dummy"
+               icon="icons/KorMoran2.png"
+               id="de.tu_berlin.pes.memo.cormorant.dummy"
+               label="Abstract Representation"
+               mode="FORCE_TEXT"
+               style="push"
+               toolbarPath="&quot;Normal/additions&quot;">
+         </action>
+         <action
+               class="de.tu_berlin.pes.cormorant.ExpressionExtraction.actions.DenotationAction"
+               icon="icons/KorMoran2.png"
+               id="de.tu_berlin.pes.memo.cormorant.denotationaction"
+               label="Denotation"
+               mode="FORCE_TEXT"
+               style="push"
+               toolbarPath="&quot;Normal/additions&quot;">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
